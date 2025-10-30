@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proyecto MindAR 3D</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+
+    <a-scene embedded arjs='sourceType: webcam; detectionMode: mono; patternRatio: 0.5;'>
+        
+        <a-marker type='pattern' url='pattern-79d8fc91-0523-4ac7-9ea3-7eefe931d915.patt'>
+            
+            <a-entity
+                gltf-model="Playstation.glb" 
+                scale="0.5 0.5 0.5"
+                position="0 0 0"
+                rotation="0 0 0"
+            ></a-entity>
+
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
